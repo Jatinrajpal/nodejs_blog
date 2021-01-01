@@ -1,0 +1,26 @@
+<%- include ('layouts/header') -%>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="text-center" style="margin-top: 15%;">
+      <form class="form-signin" method="POST" action="/user/login">
+        <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnkrh4GsqdjOBKZdZuf04CJ5Qq6H_bbrvZA&usqp=CAU" alt="blog" width="175" height="150">
+        <h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
+        <label for="username" class="sr-only">username</label>
+        <input type="text" id="username" class="form-control" placeholder="username"  autofocus name="username">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <br>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password"  name="password">
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<%- include ('layouts/footer') -%>

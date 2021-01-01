@@ -1,0 +1,33 @@
+<%- include ('layouts/header') -%>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="text-center" style="margin-top: 15%;">
+      <form class="form-signin" method="POST" action="/user/register">
+        <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnkrh4GsqdjOBKZdZuf04CJ5Qq6H_bbrvZA&usqp=CAU" alt="" width="155" height="125">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <br>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="email">
+        <label for="inputEmail" class="sr-only">Name</label>
+        <br>
+        <input type="text" id="inputEmail" class="form-control" placeholder="name" required autofocus name="name">
+        
+        <label for="inputEmail" class="sr-only">user name</label>
+        <br>
+        <input type="text" id="inputEmail" class="form-control" placeholder="user name" required autofocus name="username">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <br>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password">
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<%- include ('layouts/footer') -%>

@@ -1,0 +1,18 @@
+<%- include ('layouts/header') -%>
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <ul  style="margin-top: 5px;;" >
+            <% for (var articles of arti)  {%>
+            <li class="form-control" style="list-style-type: none;"><a href="/articles/<%= articles._id %>""><%= articles.title %></a></li>
+            <% }%>
+        
+        </ul>
+    </div>
+    <div class="col-md-3"></div>
+
+</div>
+
+
+<%- include ('layouts/footer') -%>
