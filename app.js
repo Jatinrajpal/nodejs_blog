@@ -12,7 +12,7 @@ var passwordHash=require('password-hash')
 var config=require('./config/database')
 var passport=require('passport')
 
-
+//add routers in different file
 //PORT 
 var port=process.env.PORT||8000;
 // connecting to db
